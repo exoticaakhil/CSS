@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav-container {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .nav-item {
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.4s;
+        }
+
+        .nav-container:hover .nav-item {
+            opacity: 0.2;
+            filter: blur(3px);
+        }
+
+        .nav-container .nav-item:hover {
+            opacity: 1;
+            filter: blur(0px);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container right">
+        <a href="#" class="nav-item">Home</a>
+        <a href="#" class="nav-item">About</a>
+        <a href="#" class="nav-item">Services</a>
+        <a href="#" class="nav-item">Contact</a>
+    </div>
+</body>
+</html>

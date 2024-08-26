@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input[type="radio"]:checked{
+        border: none;
+        outline: 2px solid orangered;
+    }
+    input[type="radio"]:default{
+        border: none;
+        outline: 2px solid rgb(19, 157, 9);
+    }
+    input[type="checkbox"]:checked{
+        border: none;
+        outline: 2px solid slateblue;
+    }
+    input[type="checkbox"]:default{
+        border: none;
+        outline: 2px solid rgb(19, 157, 9);
+    }
+</style>
+<body>
+    <h1> :checked (radio,checkbox) :default</h1>
+    <form action="">
+        <label for="">How do You find about us</label>
+        <label for="">
+            <input type="radio" name="source" id="source" value="google" checked>Google
+        </label>
+        <label for="">
+            <input type="radio" name="source" id="source" value="Facebook">Facebook
+        </label>
+        <label for="">
+            <input type="radio" name="source" id="source" value="linkedin">linkedin
+        </label>
+    </form>
+    <form action="">
+        <label for="">choose technology</label>
+        <label for="">
+            <input type="checkbox" name="first" id="first" value="html" checked>html
+        </label>
+        <label for="">
+            <input type="checkbox" name="sec" id="sec" value="css">css
+        </label>
+        <label for="">
+            <input type="checkbox" name="third" id="third" value="js">js
+        </label>
+    </form>
+
+</body>
+</html>

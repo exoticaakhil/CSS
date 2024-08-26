@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 500px;
+        padding: 20px;
+    }
+    .b1,.b2,.b3,.b4{
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        background-image: url("http://picsum.photos/400/400");
+        border: 10px dashed #ccc ;
+        background-repeat: no-repeat;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    .b1{
+        background-origin: border-box;
+        
+    }
+    .b2{
+        background-origin: padding-box;
+    }
+    .b3{
+        background-origin: content-box;
+    }
+  
+</style>
+<body>
+    <section class="cointainer">
+        <div class="b1">
+            <h1> border-box</h1>
+        </div>
+        <div class="b2">
+            <h1> padding-box</h1>
+        </div>
+        <div class="b3">
+            <h1> content-box</h1>
+        </div>
+     
+    </section>
+</body>
+</html>

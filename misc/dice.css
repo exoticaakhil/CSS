@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: auto;
+}
+.cube{
+    width: 150px;
+    height: 150px;
+    margin-left:100px;
+    perspective: 550px;
+    perspective-origin: 150% 150%;
+    transform-style: preserve-3d;
+}
+.face{
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+    border: none;
+    line-height: 100px;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+.front{
+    background-color: rgba(0,0,0,0.4);
+    transform: translatez(50px);
+
+}
+.back{
+    background-color:rgba(255,0,0,0.4);
+    transform: rotatey(180deg)translatez(50px);
+
+}
+.left{
+    background-color: rgba(0,255,0,0.4);
+    transform: rotatey(-90deg)translatez(50px);
+}
+.right{
+    background-color: rgba(0,0,255,0.4);
+    transform: rotatey(90deg)translatez(50px);
+}
+.top{
+    background-color: rgba(50,50,20,0.4);
+    transform: rotatex(90deg)translatez(50px);
+    
+}
+.bottom{
+    background-color: rgba(244,150,200.0.4);
+    transform: rotatex(-90deg)translatez(50px);
+}
+ .showb .face{
+    backface-visibility: visible !important;
+}
+ .hideb .face{
+    backface-visibility: hidden !important;
+}

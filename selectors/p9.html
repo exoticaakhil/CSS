@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        background-color: yellowgreen;
+        padding: 20px;
+    }
+    .card{
+        background-color: rgb(65, 73, 49);
+        padding: 20px;
+    }
+    /* sibiling */
+    .card ~ p{
+       background-color: #fff;
+       padding: 10px;
+    }
+    .container1{
+        background-color: yellowgreen;
+        padding: 20px;
+    }
+    .card1{
+        background-color: rgb(65, 73, 49);
+        padding: 20px;
+    }
+    /* adjecent */
+    .card1 + p{
+       background-color: #fff;
+       padding: 10px;
+    }
+</style>
+<body>
+    <hr>
+    <h1>Sibiling combinator (~) </h1>
+    <section class="container">
+        <div class="card">
+            <h1>card-title</h1>
+            <p>para-inside the card</p>
+        </div>
+        <p>para-1</p>
+        <p>para-2</p>
+        <p>para-3</p>
+       
+    </section>
+    <hr>
+    <h1> Adjacent Sibiling (+)</h1>
+    <section class="container1">
+        <div class="card1">
+            <h1>card-title</h1>
+            <p>para-inside the card</p>
+        </div>
+        <p>para-1</p>
+        <p>para-2</p>
+        <p>para-3</p>
+       
+    </section>
+</body>
+</html>

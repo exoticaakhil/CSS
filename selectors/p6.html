@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btn{
+        padding: 10px,12px;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+    .btn.act{
+        background-color: blueviolet;
+        color: white;
+    }
+</style>
+<body>
+    <h1>compound Selector</h1>
+    <div id="blk">
+        <h1>Title-1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus cupiditate voluptatem tenetur cum veniam fugiat vitae, modi eligendi reprehenderit nesciunt. Reiciendis dicta labore consequuntur sapiente quidem facilis eos voluptatibus sint.
+        </p>
+        <button class="btn">click me</button>
+    </div>
+    <script>
+        let button =document.querySelector(".btn");
+        button.addEventListener("click",function(){
+            button.classList.toggle("act");
+       
+        })
+    </script>
+</body>
+</html>
